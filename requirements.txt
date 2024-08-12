@@ -3,4 +3,3 @@ pymongo
 scikit-learn
 streamlit
 numpy
-python == 3.7
