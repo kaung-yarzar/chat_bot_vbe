@@ -2,10 +2,7 @@
 
 import warnings
 warnings.filterwarnings('ignore')
-!pip install nltk
-nltk.download('punkt')
-nltk.download('wordnet')
-!pip install pymongo
+
 import nltk
 from nltk.stem import WordNetLemmatizer
 
