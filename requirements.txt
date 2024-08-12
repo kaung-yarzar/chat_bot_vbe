@@ -1,3 +1,4 @@
 nltk
 pymongo
-sklearn
+scikit-learn
+streamlit
