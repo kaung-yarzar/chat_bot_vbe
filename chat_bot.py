@@ -7,12 +7,16 @@ import nltk
 
 nltk.download('wordnet')
 nltk.download('punkt_tab')
+nltk.download('stopwords')
+
 from nltk.stem import WordNetLemmatizer
 
 import numpy
 
 import streamlit as st
 
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 from pymongo import MongoClient
 
@@ -75,8 +79,7 @@ def generate_greeting_responses(greeting):
       return random.choice(greeting_responses)
 
 # for generating responses
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+
 
 def generate_response(user_input):
   bot_response = ''
