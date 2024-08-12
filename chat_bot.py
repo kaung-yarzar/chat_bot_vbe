@@ -5,9 +5,9 @@ warnings.filterwarnings('ignore')
 
 import nltk
 
-nltk.download('wordnet')
-nltk.download('punkt_tab')
-nltk.download('stopwords')
+# nltk.download('wordnet')
+# nltk.download('punkt_tab')
+# nltk.download('stopwords')
 
 from nltk.stem import WordNetLemmatizer
 
