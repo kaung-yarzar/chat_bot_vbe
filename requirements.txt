@@ -3,4 +3,4 @@ pymongo
 scikit-learn
 streamlit
 numpy
-warnings
+python == 3.7
