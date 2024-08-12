@@ -4,6 +4,9 @@ import warnings
 warnings.filterwarnings('ignore')
 
 import nltk
+
+nltk.download('wordnet')
+nltk.download('punkt')
 from nltk.stem import WordNetLemmatizer
 
 import numpy
