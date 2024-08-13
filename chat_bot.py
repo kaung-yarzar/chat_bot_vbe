@@ -184,3 +184,14 @@ if prompt != None:
         st.markdown(response)
   # Add assistant response to chat history
   st.session_state.messages.append({"role": "assistant", "content": response, "avatar" : "🤖"})
+
+
+
+## hide streamlit icon and stuffs
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
