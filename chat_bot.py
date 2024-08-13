@@ -174,7 +174,7 @@ if prompt := st.chat_input("What is up?"):
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": prompt, "avatar" : "🧑‍💻"}) 
 if prompt != None:
-  response = f"Echo: {generate_response(prompt)}"
+  response = f"{generate_response(prompt)}"
   # Display assistant response in chat message container
   with st.chat_message("assistant", avatar="🤖"):
       # st.markdown(response)
