@@ -177,6 +177,10 @@ if prompt != None:
   response = f"Echo: {generate_response(prompt)}"
   # Display assistant response in chat message container
   with st.chat_message("assistant", avatar="🤖"):
-      st.markdown(response)
+      # st.markdown(response)
+      if 'https' in response:
+         st.image(response)
+      else:   
+        st.markdown(response)
   # Add assistant response to chat history
   st.session_state.messages.append({"role": "assistant", "content": response, "avatar" : "🤖"})
